@@ -1,0 +1,1024 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>pyrieef.rendering package &mdash; pyrieef 0.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> pyrieef
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Getting started</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">pyrieef</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>pyrieef.rendering package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pyrieef-rendering-package">
+<h1>pyrieef.rendering package<a class="headerlink" href="#pyrieef-rendering-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-pyrieef.rendering.common_imports">
+<span id="pyrieef-rendering-common-imports-module"></span><h2>pyrieef.rendering.common_imports module<a class="headerlink" href="#module-pyrieef.rendering.common_imports" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-pyrieef.rendering.gl_cartesian">
+<span id="pyrieef-rendering-gl-cartesian-module"></span><h2>pyrieef.rendering.gl_cartesian module<a class="headerlink" href="#module-pyrieef.rendering.gl_cartesian" title="Permalink to this headline">¶</a></h2>
+<p>Optional 3D renderer based on Open3D’s visualizer.</p>
+</div>
+<div class="section" id="module-pyrieef.rendering.gl_planar">
+<span id="pyrieef-rendering-gl-planar-module"></span><h2>pyrieef.rendering.gl_planar module<a class="headerlink" href="#module-pyrieef.rendering.gl_planar" title="Permalink to this headline">¶</a></h2>
+<p>2D rendering framework
+imported from openai 15/08/08
+<a class="reference external" href="https://github.com/openai/gym/blob/master/gym/envs/classic_control/rendering.py">https://github.com/openai/gym/blob/master/gym/envs/classic_control/rendering.py</a></p>
+<dl class="class">
+<dt id="pyrieef.rendering.gl_planar.Attr">
+<em class="property">class </em><code class="sig-prename descclassname">pyrieef.rendering.gl_planar.</code><code class="sig-name descname">Attr</code><a class="headerlink" href="#pyrieef.rendering.gl_planar.Attr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="pyrieef.rendering.gl_planar.Attr.disable">
+<code class="sig-name descname">disable</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.Attr.disable" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.gl_planar.Attr.enable">
+<code class="sig-name descname">enable</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.Attr.enable" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyrieef.rendering.gl_planar.Color">
+<em class="property">class </em><code class="sig-prename descclassname">pyrieef.rendering.gl_planar.</code><code class="sig-name descname">Color</code><span class="sig-paren">(</span><em class="sig-param">vec4</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.Color" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pyrieef.rendering.gl_planar.Attr" title="pyrieef.rendering.gl_planar.Attr"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyrieef.rendering.gl_planar.Attr</span></code></a></p>
+<dl class="method">
+<dt id="pyrieef.rendering.gl_planar.Color.enable">
+<code class="sig-name descname">enable</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.Color.enable" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyrieef.rendering.gl_planar.Compound">
+<em class="property">class </em><code class="sig-prename descclassname">pyrieef.rendering.gl_planar.</code><code class="sig-name descname">Compound</code><span class="sig-paren">(</span><em class="sig-param">gs</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.Compound" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pyrieef.rendering.gl_planar.Geom" title="pyrieef.rendering.gl_planar.Geom"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyrieef.rendering.gl_planar.Geom</span></code></a></p>
+<dl class="method">
+<dt id="pyrieef.rendering.gl_planar.Compound.render1">
+<code class="sig-name descname">render1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.Compound.render1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyrieef.rendering.gl_planar.FilledPolygon">
+<em class="property">class </em><code class="sig-prename descclassname">pyrieef.rendering.gl_planar.</code><code class="sig-name descname">FilledPolygon</code><span class="sig-paren">(</span><em class="sig-param">v</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.FilledPolygon" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pyrieef.rendering.gl_planar.Geom" title="pyrieef.rendering.gl_planar.Geom"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyrieef.rendering.gl_planar.Geom</span></code></a></p>
+<dl class="method">
+<dt id="pyrieef.rendering.gl_planar.FilledPolygon.render1">
+<code class="sig-name descname">render1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.FilledPolygon.render1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyrieef.rendering.gl_planar.Geom">
+<em class="property">class </em><code class="sig-prename descclassname">pyrieef.rendering.gl_planar.</code><code class="sig-name descname">Geom</code><a class="headerlink" href="#pyrieef.rendering.gl_planar.Geom" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="pyrieef.rendering.gl_planar.Geom.add_attr">
+<code class="sig-name descname">add_attr</code><span class="sig-paren">(</span><em class="sig-param">attr</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.Geom.add_attr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.gl_planar.Geom.render">
+<code class="sig-name descname">render</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.Geom.render" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.gl_planar.Geom.render1">
+<code class="sig-name descname">render1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.Geom.render1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.gl_planar.Geom.set_color">
+<code class="sig-name descname">set_color</code><span class="sig-paren">(</span><em class="sig-param">r</em>, <em class="sig-param">g</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.Geom.set_color" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyrieef.rendering.gl_planar.Image">
+<em class="property">class </em><code class="sig-prename descclassname">pyrieef.rendering.gl_planar.</code><code class="sig-name descname">Image</code><span class="sig-paren">(</span><em class="sig-param">width</em>, <em class="sig-param">height</em>, <em class="sig-param">arr=None</em>, <em class="sig-param">fname=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.Image" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pyrieef.rendering.gl_planar.Geom" title="pyrieef.rendering.gl_planar.Geom"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyrieef.rendering.gl_planar.Geom</span></code></a></p>
+<dl class="method">
+<dt id="pyrieef.rendering.gl_planar.Image.render1">
+<code class="sig-name descname">render1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.Image.render1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyrieef.rendering.gl_planar.Line">
+<em class="property">class </em><code class="sig-prename descclassname">pyrieef.rendering.gl_planar.</code><code class="sig-name descname">Line</code><span class="sig-paren">(</span><em class="sig-param">start=(0.0</em>, <em class="sig-param">0.0)</em>, <em class="sig-param">end=(0.0</em>, <em class="sig-param">0.0)</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.Line" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pyrieef.rendering.gl_planar.Geom" title="pyrieef.rendering.gl_planar.Geom"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyrieef.rendering.gl_planar.Geom</span></code></a></p>
+<dl class="method">
+<dt id="pyrieef.rendering.gl_planar.Line.render1">
+<code class="sig-name descname">render1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.Line.render1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.gl_planar.Line.set_linewidth">
+<code class="sig-name descname">set_linewidth</code><span class="sig-paren">(</span><em class="sig-param">x</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.Line.set_linewidth" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyrieef.rendering.gl_planar.LineStyle">
+<em class="property">class </em><code class="sig-prename descclassname">pyrieef.rendering.gl_planar.</code><code class="sig-name descname">LineStyle</code><span class="sig-paren">(</span><em class="sig-param">style</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.LineStyle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pyrieef.rendering.gl_planar.Attr" title="pyrieef.rendering.gl_planar.Attr"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyrieef.rendering.gl_planar.Attr</span></code></a></p>
+<dl class="method">
+<dt id="pyrieef.rendering.gl_planar.LineStyle.disable">
+<code class="sig-name descname">disable</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.LineStyle.disable" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.gl_planar.LineStyle.enable">
+<code class="sig-name descname">enable</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.LineStyle.enable" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyrieef.rendering.gl_planar.LineWidth">
+<em class="property">class </em><code class="sig-prename descclassname">pyrieef.rendering.gl_planar.</code><code class="sig-name descname">LineWidth</code><span class="sig-paren">(</span><em class="sig-param">stroke</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.LineWidth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pyrieef.rendering.gl_planar.Attr" title="pyrieef.rendering.gl_planar.Attr"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyrieef.rendering.gl_planar.Attr</span></code></a></p>
+<dl class="method">
+<dt id="pyrieef.rendering.gl_planar.LineWidth.enable">
+<code class="sig-name descname">enable</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.LineWidth.enable" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyrieef.rendering.gl_planar.Point">
+<em class="property">class </em><code class="sig-prename descclassname">pyrieef.rendering.gl_planar.</code><code class="sig-name descname">Point</code><a class="headerlink" href="#pyrieef.rendering.gl_planar.Point" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pyrieef.rendering.gl_planar.Geom" title="pyrieef.rendering.gl_planar.Geom"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyrieef.rendering.gl_planar.Geom</span></code></a></p>
+<dl class="method">
+<dt id="pyrieef.rendering.gl_planar.Point.render1">
+<code class="sig-name descname">render1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.Point.render1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyrieef.rendering.gl_planar.PolyLine">
+<em class="property">class </em><code class="sig-prename descclassname">pyrieef.rendering.gl_planar.</code><code class="sig-name descname">PolyLine</code><span class="sig-paren">(</span><em class="sig-param">v</em>, <em class="sig-param">close</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.PolyLine" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pyrieef.rendering.gl_planar.Geom" title="pyrieef.rendering.gl_planar.Geom"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyrieef.rendering.gl_planar.Geom</span></code></a></p>
+<dl class="method">
+<dt id="pyrieef.rendering.gl_planar.PolyLine.render1">
+<code class="sig-name descname">render1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.PolyLine.render1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.gl_planar.PolyLine.set_linewidth">
+<code class="sig-name descname">set_linewidth</code><span class="sig-paren">(</span><em class="sig-param">x</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.PolyLine.set_linewidth" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyrieef.rendering.gl_planar.SimpleImageViewer">
+<em class="property">class </em><code class="sig-prename descclassname">pyrieef.rendering.gl_planar.</code><code class="sig-name descname">SimpleImageViewer</code><span class="sig-paren">(</span><em class="sig-param">display=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.SimpleImageViewer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="pyrieef.rendering.gl_planar.SimpleImageViewer.close">
+<code class="sig-name descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.SimpleImageViewer.close" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.gl_planar.SimpleImageViewer.imshow">
+<code class="sig-name descname">imshow</code><span class="sig-paren">(</span><em class="sig-param">arr</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.SimpleImageViewer.imshow" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyrieef.rendering.gl_planar.Transform">
+<em class="property">class </em><code class="sig-prename descclassname">pyrieef.rendering.gl_planar.</code><code class="sig-name descname">Transform</code><span class="sig-paren">(</span><em class="sig-param">translation=(0.0</em>, <em class="sig-param">0.0)</em>, <em class="sig-param">rotation=0.0</em>, <em class="sig-param">scale=(1</em>, <em class="sig-param">1)</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.Transform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pyrieef.rendering.gl_planar.Attr" title="pyrieef.rendering.gl_planar.Attr"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyrieef.rendering.gl_planar.Attr</span></code></a></p>
+<dl class="method">
+<dt id="pyrieef.rendering.gl_planar.Transform.disable">
+<code class="sig-name descname">disable</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.Transform.disable" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.gl_planar.Transform.enable">
+<code class="sig-name descname">enable</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.Transform.enable" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.gl_planar.Transform.set_rotation">
+<code class="sig-name descname">set_rotation</code><span class="sig-paren">(</span><em class="sig-param">new</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.Transform.set_rotation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.gl_planar.Transform.set_scale">
+<code class="sig-name descname">set_scale</code><span class="sig-paren">(</span><em class="sig-param">newx</em>, <em class="sig-param">newy</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.Transform.set_scale" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.gl_planar.Transform.set_translation">
+<code class="sig-name descname">set_translation</code><span class="sig-paren">(</span><em class="sig-param">newx</em>, <em class="sig-param">newy</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.Transform.set_translation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyrieef.rendering.gl_planar.Viewer">
+<em class="property">class </em><code class="sig-prename descclassname">pyrieef.rendering.gl_planar.</code><code class="sig-name descname">Viewer</code><span class="sig-paren">(</span><em class="sig-param">width</em>, <em class="sig-param">height</em>, <em class="sig-param">display=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.Viewer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="pyrieef.rendering.gl_planar.Viewer.add_geom">
+<code class="sig-name descname">add_geom</code><span class="sig-paren">(</span><em class="sig-param">geom</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.Viewer.add_geom" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.gl_planar.Viewer.add_onetime">
+<code class="sig-name descname">add_onetime</code><span class="sig-paren">(</span><em class="sig-param">geom</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.Viewer.add_onetime" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.gl_planar.Viewer.close">
+<code class="sig-name descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.Viewer.close" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.gl_planar.Viewer.draw_circle">
+<code class="sig-name descname">draw_circle</code><span class="sig-paren">(</span><em class="sig-param">radius=10</em>, <em class="sig-param">res=30</em>, <em class="sig-param">filled=True</em>, <em class="sig-param">**attrs</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.Viewer.draw_circle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.gl_planar.Viewer.draw_line">
+<code class="sig-name descname">draw_line</code><span class="sig-paren">(</span><em class="sig-param">start</em>, <em class="sig-param">end</em>, <em class="sig-param">**attrs</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.Viewer.draw_line" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.gl_planar.Viewer.draw_polygon">
+<code class="sig-name descname">draw_polygon</code><span class="sig-paren">(</span><em class="sig-param">v</em>, <em class="sig-param">filled=True</em>, <em class="sig-param">**attrs</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.Viewer.draw_polygon" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.gl_planar.Viewer.draw_polyline">
+<code class="sig-name descname">draw_polyline</code><span class="sig-paren">(</span><em class="sig-param">v</em>, <em class="sig-param">**attrs</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.Viewer.draw_polyline" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.gl_planar.Viewer.get_array">
+<code class="sig-name descname">get_array</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.Viewer.get_array" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.gl_planar.Viewer.render">
+<code class="sig-name descname">render</code><span class="sig-paren">(</span><em class="sig-param">return_rgb_array=False</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.Viewer.render" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.gl_planar.Viewer.set_bounds">
+<code class="sig-name descname">set_bounds</code><span class="sig-paren">(</span><em class="sig-param">left</em>, <em class="sig-param">right</em>, <em class="sig-param">bottom</em>, <em class="sig-param">top</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.Viewer.set_bounds" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.gl_planar.Viewer.window_closed_by_user">
+<code class="sig-name descname">window_closed_by_user</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.Viewer.window_closed_by_user" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="pyrieef.rendering.gl_planar.get_display">
+<code class="sig-prename descclassname">pyrieef.rendering.gl_planar.</code><code class="sig-name descname">get_display</code><span class="sig-paren">(</span><em class="sig-param">spec</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.get_display" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert a display specification (such as :0) 
+into an actual Display object.
+Pyglet only supports multiple Displays on Linux.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyrieef.rendering.gl_planar.make_capsule">
+<code class="sig-prename descclassname">pyrieef.rendering.gl_planar.</code><code class="sig-name descname">make_capsule</code><span class="sig-paren">(</span><em class="sig-param">length</em>, <em class="sig-param">width</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.make_capsule" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pyrieef.rendering.gl_planar.make_circle">
+<code class="sig-prename descclassname">pyrieef.rendering.gl_planar.</code><code class="sig-name descname">make_circle</code><span class="sig-paren">(</span><em class="sig-param">radius=10</em>, <em class="sig-param">res=30</em>, <em class="sig-param">filled=True</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.make_circle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pyrieef.rendering.gl_planar.make_polygon">
+<code class="sig-prename descclassname">pyrieef.rendering.gl_planar.</code><code class="sig-name descname">make_polygon</code><span class="sig-paren">(</span><em class="sig-param">v</em>, <em class="sig-param">filled=True</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.make_polygon" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pyrieef.rendering.gl_planar.make_polyline">
+<code class="sig-prename descclassname">pyrieef.rendering.gl_planar.</code><code class="sig-name descname">make_polyline</code><span class="sig-paren">(</span><em class="sig-param">v</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.gl_planar.make_polyline" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-pyrieef.rendering.heightmap">
+<span id="pyrieef-rendering-heightmap-module"></span><h2>pyrieef.rendering.heightmap module<a class="headerlink" href="#module-pyrieef.rendering.heightmap" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="pyrieef.rendering.heightmap.Heightmap">
+<em class="property">class </em><code class="sig-prename descclassname">pyrieef.rendering.heightmap.</code><code class="sig-name descname">Heightmap</code><a class="headerlink" href="#pyrieef.rendering.heightmap.Heightmap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="pyrieef.rendering.heightmap.Heightmap.add_circle_to_draw">
+<code class="sig-name descname">add_circle_to_draw</code><span class="sig-paren">(</span><em class="sig-param">origin</em>, <em class="sig-param">radius=1.0</em>, <em class="sig-param">color=(1</em>, <em class="sig-param">0</em>, <em class="sig-param">0)</em>, <em class="sig-param">alpha=1.0</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.heightmap.Heightmap.add_circle_to_draw" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.heightmap.Heightmap.add_sphere_to_draw">
+<code class="sig-name descname">add_sphere_to_draw</code><span class="sig-paren">(</span><em class="sig-param">origin</em>, <em class="sig-param">radius=1.0</em>, <em class="sig-param">color=(1</em>, <em class="sig-param">0</em>, <em class="sig-param">0)</em>, <em class="sig-param">alpha=1.0</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.heightmap.Heightmap.add_sphere_to_draw" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.heightmap.Heightmap.draw">
+<code class="sig-name descname">draw</code><span class="sig-paren">(</span><em class="sig-param">black=False</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.heightmap.Heightmap.draw" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.heightmap.Heightmap.draw_objects">
+<code class="sig-name descname">draw_objects</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.heightmap.Heightmap.draw_objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.heightmap.Heightmap.get_x">
+<code class="sig-name descname">get_x</code><span class="sig-paren">(</span><em class="sig-param">i</em>, <em class="sig-param">dx</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.heightmap.Heightmap.get_x" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.heightmap.Heightmap.get_y">
+<code class="sig-name descname">get_y</code><span class="sig-paren">(</span><em class="sig-param">j</em>, <em class="sig-param">dy</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.heightmap.Heightmap.get_y" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.heightmap.Heightmap.load">
+<code class="sig-name descname">load</code><span class="sig-paren">(</span><em class="sig-param">image</em>, <em class="sig-param">dx</em>, <em class="sig-param">dy</em>, <em class="sig-param">dz</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.heightmap.Heightmap.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>loads the vertices positions from an image</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.heightmap.Heightmap.transform">
+<code class="sig-name descname">transform</code><span class="sig-paren">(</span><em class="sig-param">x_min</em>, <em class="sig-param">x_max</em>, <em class="sig-param">y_min</em>, <em class="sig-param">y_max</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.heightmap.Heightmap.transform" title="Permalink to this definition">¶</a></dt>
+<dd><p>From certain box coordinates to heightmap coordinates</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyrieef.rendering.heightmap.Primitive">
+<em class="property">class </em><code class="sig-prename descclassname">pyrieef.rendering.heightmap.</code><code class="sig-name descname">Primitive</code><span class="sig-paren">(</span><em class="sig-param">object_type</em>, <em class="sig-param">origin</em>, <em class="sig-param">radius</em>, <em class="sig-param">color</em>, <em class="sig-param">alpha</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.heightmap.Primitive" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyrieef.rendering.heightmap.circle_verticies">
+<code class="sig-prename descclassname">pyrieef.rendering.heightmap.</code><code class="sig-name descname">circle_verticies</code><span class="sig-paren">(</span><em class="sig-param">origin</em>, <em class="sig-param">radius=1</em>, <em class="sig-param">nb_verticies=20</em>, <em class="sig-param">z=0.0</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.heightmap.circle_verticies" title="Permalink to this definition">¶</a></dt>
+<dd><p>This way of proceeding is so stupid…</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyrieef.rendering.heightmap.draw_gl">
+<code class="sig-prename descclassname">pyrieef.rendering.heightmap.</code><code class="sig-name descname">draw_gl</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.heightmap.draw_gl" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pyrieef.rendering.heightmap.flux_qubit_potential">
+<code class="sig-prename descclassname">pyrieef.rendering.heightmap.</code><code class="sig-name descname">flux_qubit_potential</code><span class="sig-paren">(</span><em class="sig-param">phi_m</em>, <em class="sig-param">phi_p</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.heightmap.flux_qubit_potential" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pyrieef.rendering.heightmap.image_surface">
+<code class="sig-prename descclassname">pyrieef.rendering.heightmap.</code><code class="sig-name descname">image_surface</code><span class="sig-paren">(</span><em class="sig-param">nb_points</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.heightmap.image_surface" title="Permalink to this definition">¶</a></dt>
+<dd><p>generate surface from data</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyrieef.rendering.heightmap.potential_surface">
+<code class="sig-prename descclassname">pyrieef.rendering.heightmap.</code><code class="sig-name descname">potential_surface</code><span class="sig-paren">(</span><em class="sig-param">nb_points</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.heightmap.potential_surface" title="Permalink to this definition">¶</a></dt>
+<dd><p>generete an abstract mathematical surface</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyrieef.rendering.heightmap.resize_gl">
+<code class="sig-prename descclassname">pyrieef.rendering.heightmap.</code><code class="sig-name descname">resize_gl</code><span class="sig-paren">(</span><em class="sig-param">width</em>, <em class="sig-param">height</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.heightmap.resize_gl" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pyrieef.rendering.heightmap.sphere_coordinates">
+<code class="sig-prename descclassname">pyrieef.rendering.heightmap.</code><code class="sig-name descname">sphere_coordinates</code><span class="sig-paren">(</span><em class="sig-param">lat</em>, <em class="sig-param">lon</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.heightmap.sphere_coordinates" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pyrieef.rendering.heightmap.sphere_verticies">
+<code class="sig-prename descclassname">pyrieef.rendering.heightmap.</code><code class="sig-name descname">sphere_verticies</code><span class="sig-paren">(</span><em class="sig-param">origin</em>, <em class="sig-param">radius=1</em>, <em class="sig-param">step=10</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.heightmap.sphere_verticies" title="Permalink to this definition">¶</a></dt>
+<dd><p>For the some reason the GLU makes colors as shit 
+TODO It would be easier to implement with:</p>
+<blockquote>
+<div><p>sphere = gluNewQuadric()
+gluSphere(sphere, o.radius, 50, 50)</p>
+</div></blockquote>
+<p>This way of proceeding is so stupid…</p>
+</dd></dl>
+
+</div>
+<div class="section" id="pyrieef-rendering-heightmap-renderer-module">
+<h2>pyrieef.rendering.heightmap_renderer module<a class="headerlink" href="#pyrieef-rendering-heightmap-renderer-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-pyrieef.rendering.optimization">
+<span id="pyrieef-rendering-optimization-module"></span><h2>pyrieef.rendering.optimization module<a class="headerlink" href="#module-pyrieef.rendering.optimization" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="pyrieef.rendering.optimization.TrajectoryOptimizationViewer">
+<em class="property">class </em><code class="sig-prename descclassname">pyrieef.rendering.optimization.</code><code class="sig-name descname">TrajectoryOptimizationViewer</code><span class="sig-paren">(</span><em class="sig-param">objective</em>, <em class="sig-param">draw=True</em>, <em class="sig-param">draw_gradient=True</em>, <em class="sig-param">use_3d=False</em>, <em class="sig-param">use_gl=True</em>, <em class="sig-param">scale=700.0</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.optimization.TrajectoryOptimizationViewer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Wrapper around a Trajectory objective function
+tha can draw the inner optimization quantities</p>
+<dl class="method">
+<dt id="pyrieef.rendering.optimization.TrajectoryOptimizationViewer.draw">
+<code class="sig-name descname">draw</code><span class="sig-paren">(</span><em class="sig-param">trajectory</em>, <em class="sig-param">g_traj=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.optimization.TrajectoryOptimizationViewer.draw" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.optimization.TrajectoryOptimizationViewer.draw_gradient">
+<code class="sig-name descname">draw_gradient</code><span class="sig-paren">(</span><em class="sig-param">x</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.optimization.TrajectoryOptimizationViewer.draw_gradient" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.optimization.TrajectoryOptimizationViewer.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">x</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.optimization.TrajectoryOptimizationViewer.forward" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.optimization.TrajectoryOptimizationViewer.gradient">
+<code class="sig-name descname">gradient</code><span class="sig-paren">(</span><em class="sig-param">x</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.optimization.TrajectoryOptimizationViewer.gradient" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.optimization.TrajectoryOptimizationViewer.hessian">
+<code class="sig-name descname">hessian</code><span class="sig-paren">(</span><em class="sig-param">x</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.optimization.TrajectoryOptimizationViewer.hessian" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.optimization.TrajectoryOptimizationViewer.init_viewer">
+<code class="sig-name descname">init_viewer</code><span class="sig-paren">(</span><em class="sig-param">workspace</em>, <em class="sig-param">scale=700.0</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.optimization.TrajectoryOptimizationViewer.init_viewer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.optimization.TrajectoryOptimizationViewer.reset_objective">
+<code class="sig-name descname">reset_objective</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.optimization.TrajectoryOptimizationViewer.reset_objective" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyrieef.rendering.shader">
+<span id="pyrieef-rendering-shader-module"></span><h2>pyrieef.rendering.shader module<a class="headerlink" href="#module-pyrieef.rendering.shader" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="pyrieef.rendering.shader.Shader">
+<em class="property">class </em><code class="sig-prename descclassname">pyrieef.rendering.shader.</code><code class="sig-name descname">Shader</code><span class="sig-paren">(</span><em class="sig-param">vert=[]</em>, <em class="sig-param">frag=[]</em>, <em class="sig-param">geom=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.shader.Shader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="pyrieef.rendering.shader.Shader.bind">
+<code class="sig-name descname">bind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.shader.Shader.bind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.shader.Shader.createShader">
+<code class="sig-name descname">createShader</code><span class="sig-paren">(</span><em class="sig-param">strings</em>, <em class="sig-param">type</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.shader.Shader.createShader" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.shader.Shader.link">
+<code class="sig-name descname">link</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.shader.Shader.link" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.shader.Shader.unbind">
+<code class="sig-name descname">unbind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.shader.Shader.unbind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.shader.Shader.uniform_matrixf">
+<code class="sig-name descname">uniform_matrixf</code><span class="sig-paren">(</span><em class="sig-param">name</em>, <em class="sig-param">mat</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.shader.Shader.uniform_matrixf" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.shader.Shader.uniformf">
+<code class="sig-name descname">uniformf</code><span class="sig-paren">(</span><em class="sig-param">name</em>, <em class="sig-param">*vals</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.shader.Shader.uniformf" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.shader.Shader.uniformi">
+<code class="sig-name descname">uniformi</code><span class="sig-paren">(</span><em class="sig-param">name</em>, <em class="sig-param">*vals</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.shader.Shader.uniformi" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="pyrieef-rendering-show-image-module">
+<h2>pyrieef.rendering.show_image module<a class="headerlink" href="#pyrieef-rendering-show-image-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="pyrieef-rendering-sphere-module">
+<h2>pyrieef.rendering.sphere module<a class="headerlink" href="#pyrieef-rendering-sphere-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-pyrieef.rendering.workspace_cartesian">
+<span id="pyrieef-rendering-workspace-cartesian-module"></span><h2>pyrieef.rendering.workspace_cartesian module<a class="headerlink" href="#module-pyrieef.rendering.workspace_cartesian" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-pyrieef.rendering.workspace_planar">
+<span id="pyrieef-rendering-workspace-planar-module"></span><h2>pyrieef.rendering.workspace_planar module<a class="headerlink" href="#module-pyrieef.rendering.workspace_planar" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceDrawer">
+<em class="property">class </em><code class="sig-prename descclassname">pyrieef.rendering.workspace_planar.</code><code class="sig-name descname">WorkspaceDrawer</code><span class="sig-paren">(</span><em class="sig-param">workspace</em>, <em class="sig-param">wait_for_keyboard=False</em>, <em class="sig-param">rows=1</em>, <em class="sig-param">cols=1</em>, <em class="sig-param">scale=1.0</em>, <em class="sig-param">dynamic=False</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceDrawer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pyrieef.rendering.workspace_planar.WorkspaceRender" title="pyrieef.rendering.workspace_planar.WorkspaceRender"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyrieef.rendering.workspace_planar.WorkspaceRender</span></code></a></p>
+<p>Workspace display based on matplotlib backend</p>
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceDrawer.draw_ws_background">
+<code class="sig-name descname">draw_ws_background</code><span class="sig-paren">(</span><em class="sig-param">phi</em>, <em class="sig-param">nb_points=100</em>, <em class="sig-param">color_style=&lt;matplotlib.colors.ListedColormap object&gt;</em>, <em class="sig-param">interpolate='bilinear'</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceDrawer.draw_ws_background" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceDrawer.draw_ws_circle">
+<code class="sig-name descname">draw_ws_circle</code><span class="sig-paren">(</span><em class="sig-param">radius</em>, <em class="sig-param">origin</em>, <em class="sig-param">color=(0</em>, <em class="sig-param">1</em>, <em class="sig-param">0)</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceDrawer.draw_ws_circle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceDrawer.draw_ws_img">
+<code class="sig-name descname">draw_ws_img</code><span class="sig-paren">(</span><em class="sig-param">Z</em>, <em class="sig-param">interpolate='nearest'</em>, <em class="sig-param">color_style=&lt;matplotlib.colors.ListedColormap object&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceDrawer.draw_ws_img" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Examples of coloring are<span class="classifier">[viridis, hot, bone, magma]</span></dt><dd><p>see page :
+<a class="reference external" href="https://matplotlib.org/examples/color/colormaps_reference.html">https://matplotlib.org/examples/color/colormaps_reference.html</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceDrawer.draw_ws_line">
+<code class="sig-name descname">draw_ws_line</code><span class="sig-paren">(</span><em class="sig-param">line</em>, <em class="sig-param">color='r'</em>, <em class="sig-param">color_id=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceDrawer.draw_ws_line" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceDrawer.draw_ws_line_fill">
+<code class="sig-name descname">draw_ws_line_fill</code><span class="sig-paren">(</span><em class="sig-param">line</em>, <em class="sig-param">color='r'</em>, <em class="sig-param">color_id=None</em>, <em class="sig-param">linewidth=2.0</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceDrawer.draw_ws_line_fill" title="Permalink to this definition">¶</a></dt>
+<dd><p>draws a line where points are given as a list</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceDrawer.draw_ws_obstacles">
+<code class="sig-name descname">draw_ws_obstacles</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceDrawer.draw_ws_obstacles" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceDrawer.draw_ws_point">
+<code class="sig-name descname">draw_ws_point</code><span class="sig-paren">(</span><em class="sig-param">point</em>, <em class="sig-param">color='b'</em>, <em class="sig-param">shape='x'</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceDrawer.draw_ws_point" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceDrawer.draw_ws_polygon">
+<code class="sig-name descname">draw_ws_polygon</code><span class="sig-paren">(</span><em class="sig-param">vertices</em>, <em class="sig-param">origin</em>, <em class="sig-param">rotation</em>, <em class="sig-param">color=(1</em>, <em class="sig-param">0</em>, <em class="sig-param">0)</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceDrawer.draw_ws_polygon" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceDrawer.init">
+<code class="sig-name descname">init</code><span class="sig-paren">(</span><em class="sig-param">rows</em>, <em class="sig-param">cols</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceDrawer.init" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceDrawer.remove_axis">
+<code class="sig-name descname">remove_axis</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceDrawer.remove_axis" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceDrawer.save_figure">
+<code class="sig-name descname">save_figure</code><span class="sig-paren">(</span><em class="sig-param">path</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceDrawer.save_figure" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceDrawer.set_drawing_axis">
+<code class="sig-name descname">set_drawing_axis</code><span class="sig-paren">(</span><em class="sig-param">i</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceDrawer.set_drawing_axis" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceDrawer.set_title">
+<code class="sig-name descname">set_title</code><span class="sig-paren">(</span><em class="sig-param">title</em>, <em class="sig-param">fontsize=15</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceDrawer.set_title" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceDrawer.show">
+<code class="sig-name descname">show</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceDrawer.show" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceDrawer.show_once">
+<code class="sig-name descname">show_once</code><span class="sig-paren">(</span><em class="sig-param">t_sleep=0.0001</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceDrawer.show_once" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceHeightmap">
+<em class="property">class </em><code class="sig-prename descclassname">pyrieef.rendering.workspace_planar.</code><code class="sig-name descname">WorkspaceHeightmap</code><span class="sig-paren">(</span><em class="sig-param">workspace</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceHeightmap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pyrieef.rendering.workspace_planar.WorkspaceRender" title="pyrieef.rendering.workspace_planar.WorkspaceRender"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyrieef.rendering.workspace_planar.WorkspaceRender</span></code></a></p>
+<p>Workspace display based on pyglet heighmap</p>
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceHeightmap.close">
+<code class="sig-name descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceHeightmap.close" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceHeightmap.draw_ws_background">
+<code class="sig-name descname">draw_ws_background</code><span class="sig-paren">(</span><em class="sig-param">function</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceHeightmap.draw_ws_background" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceHeightmap.draw_ws_circle">
+<code class="sig-name descname">draw_ws_circle</code><span class="sig-paren">(</span><em class="sig-param">radius</em>, <em class="sig-param">origin</em>, <em class="sig-param">color=(0</em>, <em class="sig-param">1</em>, <em class="sig-param">0)</em>, <em class="sig-param">height=20.0</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceHeightmap.draw_ws_circle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceHeightmap.draw_ws_line">
+<code class="sig-name descname">draw_ws_line</code><span class="sig-paren">(</span><em class="sig-param">line</em>, <em class="sig-param">color=(1</em>, <em class="sig-param">0</em>, <em class="sig-param">0)</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceHeightmap.draw_ws_line" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceHeightmap.draw_ws_obstacles">
+<code class="sig-name descname">draw_ws_obstacles</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceHeightmap.draw_ws_obstacles" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceHeightmap.draw_ws_point">
+<code class="sig-name descname">draw_ws_point</code><span class="sig-paren">(</span><em class="sig-param">point</em>, <em class="sig-param">color='b'</em>, <em class="sig-param">shape='x'</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceHeightmap.draw_ws_point" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceHeightmap.draw_ws_sphere">
+<code class="sig-name descname">draw_ws_sphere</code><span class="sig-paren">(</span><em class="sig-param">p</em>, <em class="sig-param">height=20.0</em>, <em class="sig-param">color=(1</em>, <em class="sig-param">0</em>, <em class="sig-param">0)</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceHeightmap.draw_ws_sphere" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceHeightmap.heightmap_coordinates">
+<code class="sig-name descname">heightmap_coordinates</code><span class="sig-paren">(</span><em class="sig-param">p</em>, <em class="sig-param">height</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceHeightmap.heightmap_coordinates" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceHeightmap.normalize_height">
+<code class="sig-name descname">normalize_height</code><span class="sig-paren">(</span><em class="sig-param">c</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceHeightmap.normalize_height" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceHeightmap.on_draw">
+<code class="sig-name descname">on_draw</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceHeightmap.on_draw" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceHeightmap.on_mouse_drag">
+<code class="sig-name descname">on_mouse_drag</code><span class="sig-paren">(</span><em class="sig-param">x</em>, <em class="sig-param">y</em>, <em class="sig-param">dx</em>, <em class="sig-param">dy</em>, <em class="sig-param">button</em>, <em class="sig-param">modifiers</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceHeightmap.on_mouse_drag" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceHeightmap.on_mouse_scroll">
+<code class="sig-name descname">on_mouse_scroll</code><span class="sig-paren">(</span><em class="sig-param">x</em>, <em class="sig-param">y</em>, <em class="sig-param">scroll_x</em>, <em class="sig-param">scroll_y</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceHeightmap.on_mouse_scroll" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceHeightmap.on_resize">
+<code class="sig-name descname">on_resize</code><span class="sig-paren">(</span><em class="sig-param">width</em>, <em class="sig-param">height</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceHeightmap.on_resize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceHeightmap.render">
+<code class="sig-name descname">render</code><span class="sig-paren">(</span><em class="sig-param">return_rgb_array=False</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceHeightmap.render" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceHeightmap.reset_objects">
+<code class="sig-name descname">reset_objects</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceHeightmap.reset_objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceHeightmap.reset_spheres">
+<code class="sig-name descname">reset_spheres</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceHeightmap.reset_spheres" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceHeightmap.show">
+<code class="sig-name descname">show</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceHeightmap.show" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceHeightmap.show_once">
+<code class="sig-name descname">show_once</code><span class="sig-paren">(</span><em class="sig-param">t_sleep=0.2</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceHeightmap.show_once" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceHeightmap.update">
+<code class="sig-name descname">update</code><span class="sig-paren">(</span><em class="sig-param">dt</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceHeightmap.update" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceHeightmap.window_closed_by_user">
+<code class="sig-name descname">window_closed_by_user</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceHeightmap.window_closed_by_user" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceOpenGl">
+<em class="property">class </em><code class="sig-prename descclassname">pyrieef.rendering.workspace_planar.</code><code class="sig-name descname">WorkspaceOpenGl</code><span class="sig-paren">(</span><em class="sig-param">workspace</em>, <em class="sig-param">wait_for_keyboard=False</em>, <em class="sig-param">display=None</em>, <em class="sig-param">scale=700.0</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceOpenGl" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pyrieef.rendering.workspace_planar.WorkspaceRender" title="pyrieef.rendering.workspace_planar.WorkspaceRender"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyrieef.rendering.workspace_planar.WorkspaceRender</span></code></a></p>
+<p>Workspace display based on pyglet backend</p>
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceOpenGl.draw_ws_background">
+<code class="sig-name descname">draw_ws_background</code><span class="sig-paren">(</span><em class="sig-param">phi</em>, <em class="sig-param">nb_points=100</em>, <em class="sig-param">color_style=&lt;matplotlib.colors.ListedColormap object&gt;</em>, <em class="sig-param">interpolate='bilinear'</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceOpenGl.draw_ws_background" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceOpenGl.draw_ws_circle">
+<code class="sig-name descname">draw_ws_circle</code><span class="sig-paren">(</span><em class="sig-param">radius</em>, <em class="sig-param">origin</em>, <em class="sig-param">color=(0</em>, <em class="sig-param">1</em>, <em class="sig-param">0)</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceOpenGl.draw_ws_circle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceOpenGl.draw_ws_img">
+<code class="sig-name descname">draw_ws_img</code><span class="sig-paren">(</span><em class="sig-param">Z</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceOpenGl.draw_ws_img" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceOpenGl.draw_ws_line">
+<code class="sig-name descname">draw_ws_line</code><span class="sig-paren">(</span><em class="sig-param">line</em>, <em class="sig-param">color=(1</em>, <em class="sig-param">0</em>, <em class="sig-param">0)</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceOpenGl.draw_ws_line" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceOpenGl.draw_ws_obstacles">
+<code class="sig-name descname">draw_ws_obstacles</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceOpenGl.draw_ws_obstacles" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceOpenGl.draw_ws_point">
+<code class="sig-name descname">draw_ws_point</code><span class="sig-paren">(</span><em class="sig-param">point</em>, <em class="sig-param">color='b'</em>, <em class="sig-param">shape='x'</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceOpenGl.draw_ws_point" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceOpenGl.draw_ws_polygon">
+<code class="sig-name descname">draw_ws_polygon</code><span class="sig-paren">(</span><em class="sig-param">vertices</em>, <em class="sig-param">origin</em>, <em class="sig-param">rotation</em>, <em class="sig-param">color=(1</em>, <em class="sig-param">0</em>, <em class="sig-param">0)</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceOpenGl.draw_ws_polygon" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceOpenGl.show">
+<code class="sig-name descname">show</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceOpenGl.show" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceOpenGl.show_once">
+<code class="sig-name descname">show_once</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceOpenGl.show_once" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceRender">
+<em class="property">class </em><code class="sig-prename descclassname">pyrieef.rendering.workspace_planar.</code><code class="sig-name descname">WorkspaceRender</code><span class="sig-paren">(</span><em class="sig-param">workspace</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceRender" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Abstract class to draw a 2D workspace</p>
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceRender.draw_ws_background">
+<em class="property">abstract </em><code class="sig-name descname">draw_ws_background</code><span class="sig-paren">(</span><em class="sig-param">function</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceRender.draw_ws_background" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceRender.draw_ws_circle">
+<em class="property">abstract </em><code class="sig-name descname">draw_ws_circle</code><span class="sig-paren">(</span><em class="sig-param">radius</em>, <em class="sig-param">origin</em>, <em class="sig-param">color=(0</em>, <em class="sig-param">1</em>, <em class="sig-param">0)</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceRender.draw_ws_circle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceRender.draw_ws_line">
+<em class="property">abstract </em><code class="sig-name descname">draw_ws_line</code><span class="sig-paren">(</span><em class="sig-param">line</em>, <em class="sig-param">color=(1</em>, <em class="sig-param">0</em>, <em class="sig-param">0)</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceRender.draw_ws_line" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceRender.draw_ws_obstacles">
+<em class="property">abstract </em><code class="sig-name descname">draw_ws_obstacles</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceRender.draw_ws_obstacles" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceRender.draw_ws_polygon">
+<em class="property">abstract </em><code class="sig-name descname">draw_ws_polygon</code><span class="sig-paren">(</span><em class="sig-param">polygon</em>, <em class="sig-param">color=(1</em>, <em class="sig-param">0</em>, <em class="sig-param">0)</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceRender.draw_ws_polygon" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceRender.reset_objects">
+<code class="sig-name descname">reset_objects</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceRender.reset_objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.rendering.workspace_planar.WorkspaceRender.set_workspace">
+<code class="sig-name descname">set_workspace</code><span class="sig-paren">(</span><em class="sig-param">workspace</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.WorkspaceRender.set_workspace" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="pyrieef.rendering.workspace_planar.to_rgb3">
+<code class="sig-prename descclassname">pyrieef.rendering.workspace_planar.</code><code class="sig-name descname">to_rgb3</code><span class="sig-paren">(</span><em class="sig-param">im</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.rendering.workspace_planar.to_rgb3" title="Permalink to this definition">¶</a></dt>
+<dd><p>we can use dstack and an array copy
+this has to be slow, we create an array with
+3x the data we need and truncate afterwards</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyrieef.rendering">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pyrieef.rendering" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Jim Mainprice.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

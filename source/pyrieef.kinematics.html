@@ -1,0 +1,513 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>pyrieef.kinematics package &mdash; pyrieef 0.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> pyrieef
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Getting started</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">pyrieef</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>pyrieef.kinematics package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pyrieef-kinematics-package">
+<h1>pyrieef.kinematics package<a class="headerlink" href="#pyrieef-kinematics-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="pyrieef-kinematics-arm-kdl-module">
+<h2>pyrieef.kinematics.arm_kdl module<a class="headerlink" href="#pyrieef-kinematics-arm-kdl-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-pyrieef.kinematics.homogeneous_transform">
+<span id="pyrieef-kinematics-homogeneous-transform-module"></span><h2>pyrieef.kinematics.homogeneous_transform module<a class="headerlink" href="#module-pyrieef.kinematics.homogeneous_transform" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="pyrieef.kinematics.homogeneous_transform.HomogeneousTransform2D">
+<em class="property">class </em><code class="sig-prename descclassname">pyrieef.kinematics.homogeneous_transform.</code><code class="sig-name descname">HomogeneousTransform2D</code><span class="sig-paren">(</span><em class="sig-param">p0=array([0.</em>, <em class="sig-param">0.])</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.kinematics.homogeneous_transform.HomogeneousTransform2D" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">geometry.differentiable_geometry.DifferentiableMap</span></code></p>
+<p>Homeogeneous transformation in the plane as DifferentiableMap</p>
+<p>details:</p>
+<blockquote>
+<div><p>Takes an angle and rotates the point p0 by this angle</p>
+<blockquote>
+<div><p>f(q) = T(q) * p_0</p>
+</div></blockquote>
+<dl>
+<dt>where T defines a rotation and translation (3DoFs)</dt><dd><p>q_{0,1}     =&gt; translation
+q_{2}       =&gt; rotation</p>
+<blockquote>
+<div><dl class="simple">
+<dt>T = [ R(q)  p(q) ]</dt><dd><p>[ 0 0    1   ]</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="simple">
+<dt>p0<span class="classifier">array-like, shape (2, )</span></dt><dd><p>Points of which are rotated</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="pyrieef.kinematics.homogeneous_transform.HomogeneousTransform2D.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">q</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.kinematics.homogeneous_transform.HomogeneousTransform2D.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Should return an array or single value</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.kinematics.homogeneous_transform.HomogeneousTransform2D.input_dimension">
+<code class="sig-name descname">input_dimension</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.kinematics.homogeneous_transform.HomogeneousTransform2D.input_dimension" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.kinematics.homogeneous_transform.HomogeneousTransform2D.jacobian">
+<code class="sig-name descname">jacobian</code><span class="sig-paren">(</span><em class="sig-param">q</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.kinematics.homogeneous_transform.HomogeneousTransform2D.jacobian" title="Permalink to this definition">¶</a></dt>
+<dd><p>Should return a matrix or single value of
+m x n : [output : 2 x input : 3] (dimensions)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.kinematics.homogeneous_transform.HomogeneousTransform2D.output_dimension">
+<code class="sig-name descname">output_dimension</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.kinematics.homogeneous_transform.HomogeneousTransform2D.output_dimension" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyrieef.kinematics.homogeneous_transform.HomogeneousTransform3D">
+<em class="property">class </em><code class="sig-prename descclassname">pyrieef.kinematics.homogeneous_transform.</code><code class="sig-name descname">HomogeneousTransform3D</code><span class="sig-paren">(</span><em class="sig-param">p0=array([0.</em>, <em class="sig-param">0.</em>, <em class="sig-param">0.])</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.kinematics.homogeneous_transform.HomogeneousTransform3D" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">geometry.differentiable_geometry.DifferentiableMap</span></code></p>
+<blockquote>
+<div><p>Homeogeneous transformation as DifferentiableMap</p>
+<dl>
+<dt>details:</dt><dd><p>Takes an angle and rotates the point p0 by this angle</p>
+<blockquote>
+<div><p>f(q) = T(q) * p_0</p>
+</div></blockquote>
+<dl>
+<dt>where T defines a rotation and translation (6DoFs)</dt><dd><p>q_{0,1}     =&gt; translation
+q_{2}       =&gt; rotation</p>
+<blockquote>
+<div><dl class="simple">
+<dt>T = [ R(q)  p(q) ]</dt><dd><p>[ 0 0    1   ]</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd>
+</dl>
+</dd>
+</dl>
+</div></blockquote>
+<p>We use the Euler angel convention 3-2-1, which is found
+TODO it would be nice to match the ROS convention
+we simply use this one because it was available as derivation
+in termes for sin and cos. It seems that ROS dos
+Static-Z-Y-X so it should be the same. Still needs to test.</p>
+<dl class="method">
+<dt id="pyrieef.kinematics.homogeneous_transform.HomogeneousTransform3D.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">q</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.kinematics.homogeneous_transform.HomogeneousTransform3D.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Should return an array or single value</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.kinematics.homogeneous_transform.HomogeneousTransform3D.input_dimension">
+<code class="sig-name descname">input_dimension</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.kinematics.homogeneous_transform.HomogeneousTransform3D.input_dimension" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.kinematics.homogeneous_transform.HomogeneousTransform3D.output_dimension">
+<code class="sig-name descname">output_dimension</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.kinematics.homogeneous_transform.HomogeneousTransform3D.output_dimension" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyrieef.kinematics.homogeneous_transform.Isometry">
+<em class="property">class </em><code class="sig-prename descclassname">pyrieef.kinematics.homogeneous_transform.</code><code class="sig-name descname">Isometry</code><a class="headerlink" href="#pyrieef.kinematics.homogeneous_transform.Isometry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Interface for isometries
+(i.e., affine transform with orthogonal linear part)</p>
+<dl class="simple">
+<dt>rotation<span class="classifier">array like (n, n)</span></dt><dd><p>rotation matrix</p>
+</dd>
+<dt>translation<span class="classifier">array like (n, )</span></dt><dd><p>vector offset</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="pyrieef.kinematics.homogeneous_transform.Isometry.inverse">
+<code class="sig-name descname">inverse</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.kinematics.homogeneous_transform.Isometry.inverse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.kinematics.homogeneous_transform.Isometry.linear">
+<code class="sig-name descname">linear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.kinematics.homogeneous_transform.Isometry.linear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.kinematics.homogeneous_transform.Isometry.matrix">
+<code class="sig-name descname">matrix</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.kinematics.homogeneous_transform.Isometry.matrix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.kinematics.homogeneous_transform.Isometry.translation">
+<code class="sig-name descname">translation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.kinematics.homogeneous_transform.Isometry.translation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyrieef.kinematics.homogeneous_transform.Isometry2D">
+<em class="property">class </em><code class="sig-prename descclassname">pyrieef.kinematics.homogeneous_transform.</code><code class="sig-name descname">Isometry2D</code><span class="sig-paren">(</span><em class="sig-param">theta=None</em>, <em class="sig-param">translation=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.kinematics.homogeneous_transform.Isometry2D" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pyrieef.kinematics.homogeneous_transform.Isometry" title="pyrieef.kinematics.homogeneous_transform.Isometry"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyrieef.kinematics.homogeneous_transform.Isometry</span></code></a></p>
+<p>Affine 2d rigid body transformation.</p>
+<dl class="simple">
+<dt>theta<span class="classifier">float</span></dt><dd><p>rotation in radians</p>
+</dd>
+<dt>translation<span class="classifier">array like (2, )</span></dt><dd><p>vector offset</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="pyrieef.kinematics.homogeneous_transform.Isometry2D.inverse">
+<code class="sig-name descname">inverse</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.kinematics.homogeneous_transform.Isometry2D.inverse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.kinematics.homogeneous_transform.Isometry2D.matrix">
+<code class="sig-name descname">matrix</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.kinematics.homogeneous_transform.Isometry2D.matrix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyrieef.kinematics.homogeneous_transform.Isometry3D">
+<em class="property">class </em><code class="sig-prename descclassname">pyrieef.kinematics.homogeneous_transform.</code><code class="sig-name descname">Isometry3D</code><span class="sig-paren">(</span><em class="sig-param">rotation=None</em>, <em class="sig-param">translation=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.kinematics.homogeneous_transform.Isometry3D" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pyrieef.kinematics.homogeneous_transform.Isometry" title="pyrieef.kinematics.homogeneous_transform.Isometry"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyrieef.kinematics.homogeneous_transform.Isometry</span></code></a></p>
+<p>Affine rigid body transformation.</p>
+<dl class="method">
+<dt id="pyrieef.kinematics.homogeneous_transform.Isometry3D.inverse">
+<code class="sig-name descname">inverse</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.kinematics.homogeneous_transform.Isometry3D.inverse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.kinematics.homogeneous_transform.Isometry3D.linear">
+<code class="sig-name descname">linear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.kinematics.homogeneous_transform.Isometry3D.linear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.kinematics.homogeneous_transform.Isometry3D.matrix">
+<code class="sig-name descname">matrix</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.kinematics.homogeneous_transform.Isometry3D.matrix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.kinematics.homogeneous_transform.Isometry3D.translation">
+<code class="sig-name descname">translation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.kinematics.homogeneous_transform.Isometry3D.translation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyrieef.kinematics.homogeneous_transform.PlanarRotation">
+<em class="property">class </em><code class="sig-prename descclassname">pyrieef.kinematics.homogeneous_transform.</code><code class="sig-name descname">PlanarRotation</code><span class="sig-paren">(</span><em class="sig-param">p0</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.kinematics.homogeneous_transform.PlanarRotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">geometry.differentiable_geometry.DifferentiableMap</span></code></p>
+<p>Planar Rotation as DifferentiableMap</p>
+<p>details:</p>
+<blockquote>
+<div><p>Takes an angle and rotates the point p0 by this angle</p>
+<blockquote>
+<div><p>f(theta) = R(theta) * p_0</p>
+</div></blockquote>
+<p>p0 can be defined as a keypoin, defined constant in a frame of
+reference. Theta is a degree of freedom.</p>
+</div></blockquote>
+<dl class="simple">
+<dt>p0<span class="classifier">array-like, shape (2, )</span></dt><dd><p>Points of which are rotated</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="pyrieef.kinematics.homogeneous_transform.PlanarRotation.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">q</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.kinematics.homogeneous_transform.PlanarRotation.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Should return an array or single value</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.kinematics.homogeneous_transform.PlanarRotation.input_dimension">
+<code class="sig-name descname">input_dimension</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.kinematics.homogeneous_transform.PlanarRotation.input_dimension" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.kinematics.homogeneous_transform.PlanarRotation.jacobian">
+<code class="sig-name descname">jacobian</code><span class="sig-paren">(</span><em class="sig-param">q</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.kinematics.homogeneous_transform.PlanarRotation.jacobian" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Should return a matrix or single value of</dt><dd><p>m x n : ouput x input (dimensions)</p>
+</dd>
+</dl>
+<p>by default the method returns the finite difference jacobian.
+WARNING the object returned by this function is a numpy matrix.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.kinematics.homogeneous_transform.PlanarRotation.output_dimension">
+<code class="sig-name descname">output_dimension</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.kinematics.homogeneous_transform.PlanarRotation.output_dimension" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyrieef.kinematics.homogeneous_transform.Rotation2D">
+<em class="property">class </em><code class="sig-prename descclassname">pyrieef.kinematics.homogeneous_transform.</code><code class="sig-name descname">Rotation2D</code><span class="sig-paren">(</span><em class="sig-param">theta=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.kinematics.homogeneous_transform.Rotation2D" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>2D rotation</p>
+<dl class="simple">
+<dt>theta<span class="classifier">float</span></dt><dd><p>rotation in radians</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="pyrieef.kinematics.homogeneous_transform.Rotation2D.inverse">
+<code class="sig-name descname">inverse</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.kinematics.homogeneous_transform.Rotation2D.inverse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.kinematics.homogeneous_transform.Rotation2D.matrix">
+<code class="sig-name descname">matrix</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.kinematics.homogeneous_transform.Rotation2D.matrix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyrieef.kinematics.robot">
+<span id="pyrieef-kinematics-robot-module"></span><h2>pyrieef.kinematics.robot module<a class="headerlink" href="#module-pyrieef.kinematics.robot" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="pyrieef.kinematics.robot.Freeflyer">
+<em class="property">class </em><code class="sig-prename descclassname">pyrieef.kinematics.robot.</code><code class="sig-name descname">Freeflyer</code><span class="sig-paren">(</span><em class="sig-param">name='freeflyer', keypoints={'base': [0.0, 0.0]}, shape=[[0, 0], [0, 1], [1, 1], [1, 0]], scale=1.0</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.kinematics.robot.Freeflyer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pyrieef.kinematics.robot.Robot" title="pyrieef.kinematics.robot.Robot"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyrieef.kinematics.robot.Robot</span></code></a></p>
+<dl class="simple">
+<dt>Planar 3DoFs robot</dt><dd><p>verticies are stored counter clock-wise</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="pyrieef.kinematics.robot.Freeflyer.keypoint_map">
+<code class="sig-name descname">keypoint_map</code><span class="sig-paren">(</span><em class="sig-param">i</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.kinematics.robot.Freeflyer.keypoint_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyrieef.kinematics.robot.Robot">
+<em class="property">class </em><code class="sig-prename descclassname">pyrieef.kinematics.robot.</code><code class="sig-name descname">Robot</code><a class="headerlink" href="#pyrieef.kinematics.robot.Robot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Abstract robot class</p>
+<dl class="method">
+<dt id="pyrieef.kinematics.robot.Robot.forward_kinematics_map">
+<em class="property">abstract </em><code class="sig-name descname">forward_kinematics_map</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.kinematics.robot.Robot.forward_kinematics_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="pyrieef.kinematics.robot.assets_data_dir">
+<code class="sig-prename descclassname">pyrieef.kinematics.robot.</code><code class="sig-name descname">assets_data_dir</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.kinematics.robot.assets_data_dir" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pyrieef.kinematics.robot.create_robot_from_file">
+<code class="sig-prename descclassname">pyrieef.kinematics.robot.</code><code class="sig-name descname">create_robot_from_file</code><span class="sig-paren">(</span><em class="sig-param">filename='/Users/jmainpri/Dropbox/Work/workspace/pyrieef/pyrieef/kinematics/../../data/freeflyer.json'</em>, <em class="sig-param">scale=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.kinematics.robot.create_robot_from_file" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pyrieef.kinematics.robot.create_robot_with_even_keypoints">
+<code class="sig-prename descclassname">pyrieef.kinematics.robot.</code><code class="sig-name descname">create_robot_with_even_keypoints</code><span class="sig-paren">(</span><em class="sig-param">nb_keypoints=20</em>, <em class="sig-param">filename='/Users/jmainpri/Dropbox/Work/workspace/pyrieef/pyrieef/kinematics/../../data/freeflyer.json'</em>, <em class="sig-param">scale=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.kinematics.robot.create_robot_with_even_keypoints" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-pyrieef.kinematics">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pyrieef.kinematics" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Jim Mainprice.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

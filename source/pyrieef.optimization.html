@@ -1,0 +1,287 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>pyrieef.optimization package &mdash; pyrieef 0.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> pyrieef
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">pyrieef</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>pyrieef.optimization package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pyrieef-optimization-package">
+<h1>pyrieef.optimization package<a class="headerlink" href="#pyrieef-optimization-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-pyrieef.optimization.algorithms">
+<span id="pyrieef-optimization-algorithms-module"></span><h2>pyrieef.optimization.algorithms module<a class="headerlink" href="#module-pyrieef.optimization.algorithms" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="pyrieef.optimization.algorithms.newton_optimize_trajectory">
+<code class="sig-prename descclassname">pyrieef.optimization.algorithms.</code><code class="sig-name descname">newton_optimize_trajectory</code><span class="sig-paren">(</span><em class="sig-param">objective</em>, <em class="sig-param">trajectory</em>, <em class="sig-param">verbose=False</em>, <em class="sig-param">maxiter=15</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.optimization.algorithms.newton_optimize_trajectory" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-pyrieef.optimization.common_imports">
+<span id="pyrieef-optimization-common-imports-module"></span><h2>pyrieef.optimization.common_imports module<a class="headerlink" href="#module-pyrieef.optimization.common_imports" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-pyrieef.optimization.optimization">
+<span id="pyrieef-optimization-optimization-module"></span><h2>pyrieef.optimization.optimization module<a class="headerlink" href="#module-pyrieef.optimization.optimization" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="pyrieef.optimization.optimization.GradientDescent">
+<em class="property">class </em><code class="sig-prename descclassname">pyrieef.optimization.optimization.</code><code class="sig-name descname">GradientDescent</code><span class="sig-paren">(</span><em class="sig-param">f</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.optimization.optimization.GradientDescent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pyrieef.optimization.optimization.UnconstraintedOptimizer" title="pyrieef.optimization.optimization.UnconstraintedOptimizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyrieef.optimization.optimization.UnconstraintedOptimizer</span></code></a></p>
+<dl class="method">
+<dt id="pyrieef.optimization.optimization.GradientDescent.one_step">
+<code class="sig-name descname">one_step</code><span class="sig-paren">(</span><em class="sig-param">x</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.optimization.optimization.GradientDescent.one_step" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyrieef.optimization.optimization.NaturalGradientDescent">
+<em class="property">class </em><code class="sig-prename descclassname">pyrieef.optimization.optimization.</code><code class="sig-name descname">NaturalGradientDescent</code><span class="sig-paren">(</span><em class="sig-param">f</em>, <em class="sig-param">A</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.optimization.optimization.NaturalGradientDescent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pyrieef.optimization.optimization.UnconstraintedOptimizer" title="pyrieef.optimization.optimization.UnconstraintedOptimizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyrieef.optimization.optimization.UnconstraintedOptimizer</span></code></a></p>
+<dl class="method">
+<dt id="pyrieef.optimization.optimization.NaturalGradientDescent.delta">
+<code class="sig-name descname">delta</code><span class="sig-paren">(</span><em class="sig-param">x</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.optimization.optimization.NaturalGradientDescent.delta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.optimization.optimization.NaturalGradientDescent.one_step">
+<code class="sig-name descname">one_step</code><span class="sig-paren">(</span><em class="sig-param">x</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.optimization.optimization.NaturalGradientDescent.one_step" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyrieef.optimization.optimization.NetwtonAlgorithm">
+<em class="property">class </em><code class="sig-prename descclassname">pyrieef.optimization.optimization.</code><code class="sig-name descname">NetwtonAlgorithm</code><span class="sig-paren">(</span><em class="sig-param">f</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.optimization.optimization.NetwtonAlgorithm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pyrieef.optimization.optimization.UnconstraintedOptimizer" title="pyrieef.optimization.optimization.UnconstraintedOptimizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyrieef.optimization.optimization.UnconstraintedOptimizer</span></code></a></p>
+<dl class="method">
+<dt id="pyrieef.optimization.optimization.NetwtonAlgorithm.one_step">
+<code class="sig-name descname">one_step</code><span class="sig-paren">(</span><em class="sig-param">x</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.optimization.optimization.NetwtonAlgorithm.one_step" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyrieef.optimization.optimization.UnconstraintedOptimizer">
+<em class="property">class </em><code class="sig-prename descclassname">pyrieef.optimization.optimization.</code><code class="sig-name descname">UnconstraintedOptimizer</code><span class="sig-paren">(</span><em class="sig-param">f</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.optimization.optimization.UnconstraintedOptimizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="pyrieef.optimization.optimization.UnconstraintedOptimizer.gradient">
+<code class="sig-name descname">gradient</code><span class="sig-paren">(</span><em class="sig-param">x</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.optimization.optimization.UnconstraintedOptimizer.gradient" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.optimization.optimization.UnconstraintedOptimizer.objective">
+<code class="sig-name descname">objective</code><span class="sig-paren">(</span><em class="sig-param">x</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.optimization.optimization.UnconstraintedOptimizer.objective" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.optimization.optimization.UnconstraintedOptimizer.one_step">
+<em class="property">abstract </em><code class="sig-name descname">one_step</code><span class="sig-paren">(</span><em class="sig-param">x</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.optimization.optimization.UnconstraintedOptimizer.one_step" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.optimization.optimization.UnconstraintedOptimizer.set_eta">
+<code class="sig-name descname">set_eta</code><span class="sig-paren">(</span><em class="sig-param">eta</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.optimization.optimization.UnconstraintedOptimizer.set_eta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyrieef.optimization">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pyrieef.optimization" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Jim Mainprice.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

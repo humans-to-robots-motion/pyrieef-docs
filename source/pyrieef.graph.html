@@ -1,0 +1,341 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>pyrieef.graph package &mdash; pyrieef 0.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> pyrieef
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">pyrieef</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>pyrieef.graph package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pyrieef-graph-package">
+<h1>pyrieef.graph package<a class="headerlink" href="#pyrieef-graph-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-pyrieef.graph.shortest_path">
+<span id="pyrieef-graph-shortest-path-module"></span><h2>pyrieef.graph.shortest_path module<a class="headerlink" href="#module-pyrieef.graph.shortest_path" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="pyrieef.graph.shortest_path.CostmapToSparseGraph">
+<em class="property">class </em><code class="sig-prename descclassname">pyrieef.graph.shortest_path.</code><code class="sig-name descname">CostmapToSparseGraph</code><span class="sig-paren">(</span><em class="sig-param">costmap</em>, <em class="sig-param">average_cost=False</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.graph.shortest_path.CostmapToSparseGraph" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class that convert image to sparse graph representation
+TODO write a test for and decide weather it should
+be the costmap or the transpose of the costmap
+that should be passed to initialize the class.</p>
+<dl class="method">
+<dt id="pyrieef.graph.shortest_path.CostmapToSparseGraph.breadth_first_search">
+<code class="sig-name descname">breadth_first_search</code><span class="sig-paren">(</span><em class="sig-param">graph_dense</em>, <em class="sig-param">s_i</em>, <em class="sig-param">s_j</em>, <em class="sig-param">t_i</em>, <em class="sig-param">t_j</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.graph.shortest_path.CostmapToSparseGraph.breadth_first_search" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs a shortest path querry and returns
+the shortes path between some source cell and target cell
+expressed in costmap coordinates. This method is targeted
+for single querry.</p>
+<p>graph_dense : dense graph retpresentation of the costmap</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.graph.shortest_path.CostmapToSparseGraph.convert">
+<code class="sig-name descname">convert</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.graph.shortest_path.CostmapToSparseGraph.convert" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts a costmap to a compressed sparse graph</p>
+<dl class="simple">
+<dt>cost<span class="classifier">The M x N matrix of costs. cost[i,j]</span></dt><dd><p>gives the cost of a certain node</p>
+</dd>
+</dl>
+<p>node_map_coord  = (i, j)
+node_graph_id   = i + j * M</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.graph.shortest_path.CostmapToSparseGraph.costmap_id">
+<code class="sig-name descname">costmap_id</code><span class="sig-paren">(</span><em class="sig-param">g_id</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.graph.shortest_path.CostmapToSparseGraph.costmap_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.graph.shortest_path.CostmapToSparseGraph.dijkstra">
+<code class="sig-name descname">dijkstra</code><span class="sig-paren">(</span><em class="sig-param">graph_dense</em>, <em class="sig-param">s_i</em>, <em class="sig-param">s_j</em>, <em class="sig-param">t_i</em>, <em class="sig-param">t_j</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.graph.shortest_path.CostmapToSparseGraph.dijkstra" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs a graph search for source and target</p>
+<p>graph_dense : dense graph retpresentation of the costmap
+s_i, s_j : source coordinate on the costmap
+t_i, t_j : target coordinate on the costmap</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.graph.shortest_path.CostmapToSparseGraph.dijkstra_on_map">
+<code class="sig-name descname">dijkstra_on_map</code><span class="sig-paren">(</span><em class="sig-param">costmap</em>, <em class="sig-param">s_i</em>, <em class="sig-param">s_j</em>, <em class="sig-param">t_i</em>, <em class="sig-param">t_j</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.graph.shortest_path.CostmapToSparseGraph.dijkstra_on_map" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs a graph search for source and target on costmap
+this is the most efficient implementation for single
+querry graph search on a 2D costmap with scipy</p>
+<dl class="simple">
+<dt>costmap<span class="classifier">matrix of costs, the type of edge cost</span></dt><dd><p>is given by the class option, either average of
+node cost or simply node cost which results in a
+directed graph.</p>
+</dd>
+</dl>
+<p>s_i, s_j : source coordinate on the costmap
+t_i, t_j : target coordinate on the costmap</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.graph.shortest_path.CostmapToSparseGraph.edge_cost">
+<code class="sig-name descname">edge_cost</code><span class="sig-paren">(</span><em class="sig-param">c_i</em>, <em class="sig-param">c_j</em>, <em class="sig-param">n_i</em>, <em class="sig-param">n_j</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.graph.shortest_path.CostmapToSparseGraph.edge_cost" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.graph.shortest_path.CostmapToSparseGraph.graph_edge_cost">
+<code class="sig-name descname">graph_edge_cost</code><span class="sig-paren">(</span><em class="sig-param">n1_i</em>, <em class="sig-param">n1_j</em>, <em class="sig-param">n2_i</em>, <em class="sig-param">n2_j</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.graph.shortest_path.CostmapToSparseGraph.graph_edge_cost" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the value of an edge in the graph
+from n1 to n2</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.graph.shortest_path.CostmapToSparseGraph.graph_id">
+<code class="sig-name descname">graph_id</code><span class="sig-paren">(</span><em class="sig-param">i</em>, <em class="sig-param">j</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.graph.shortest_path.CostmapToSparseGraph.graph_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.graph.shortest_path.CostmapToSparseGraph.is_in_costmap">
+<code class="sig-name descname">is_in_costmap</code><span class="sig-paren">(</span><em class="sig-param">i</em>, <em class="sig-param">j</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.graph.shortest_path.CostmapToSparseGraph.is_in_costmap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns true if the node coord is in the costmap</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.graph.shortest_path.CostmapToSparseGraph.neiborghs">
+<em class="property">static </em><code class="sig-name descname">neiborghs</code><span class="sig-paren">(</span><em class="sig-param">i</em>, <em class="sig-param">j</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.graph.shortest_path.CostmapToSparseGraph.neiborghs" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns the costmap coordinates of all neighbor nodes</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.graph.shortest_path.CostmapToSparseGraph.shortest_path">
+<code class="sig-name descname">shortest_path</code><span class="sig-paren">(</span><em class="sig-param">predecessors</em>, <em class="sig-param">s_i</em>, <em class="sig-param">s_j</em>, <em class="sig-param">t_i</em>, <em class="sig-param">t_j</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.graph.shortest_path.CostmapToSparseGraph.shortest_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs a shortest path querry and returns
+the shortes path between some source cell and target cell
+expressed in costmap coordinates</p>
+<p>predecessors : as obdtained by shortest_paths function</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.graph.shortest_path.CostmapToSparseGraph.shortest_path_on_map">
+<code class="sig-name descname">shortest_path_on_map</code><span class="sig-paren">(</span><em class="sig-param">costmap</em>, <em class="sig-param">s_i</em>, <em class="sig-param">s_j</em>, <em class="sig-param">t_i</em>, <em class="sig-param">t_j</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.graph.shortest_path.CostmapToSparseGraph.shortest_path_on_map" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs a graph search for source and target on costmap
+this is the most efficient implementation for single
+querry graph search on a 2D costmap with scipy</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyrieef.graph.shortest_path.CostmapToSparseGraph.update_graph">
+<code class="sig-name descname">update_graph</code><span class="sig-paren">(</span><em class="sig-param">costmap</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.graph.shortest_path.CostmapToSparseGraph.update_graph" title="Permalink to this definition">¶</a></dt>
+<dd><p>updates the graph fast</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="pyrieef.graph.shortest_path.check_symmetric">
+<code class="sig-prename descclassname">pyrieef.graph.shortest_path.</code><code class="sig-name descname">check_symmetric</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">tol=1e-08</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.graph.shortest_path.check_symmetric" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pyrieef.graph.shortest_path.shortest_paths">
+<code class="sig-prename descclassname">pyrieef.graph.shortest_path.</code><code class="sig-name descname">shortest_paths</code><span class="sig-paren">(</span><em class="sig-param">graph_dense</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.graph.shortest_path.shortest_paths" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pyrieef.graph.shortest_path.symmetrize">
+<code class="sig-prename descclassname">pyrieef.graph.shortest_path.</code><code class="sig-name descname">symmetrize</code><span class="sig-paren">(</span><em class="sig-param">a</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrieef.graph.shortest_path.symmetrize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-pyrieef.graph">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pyrieef.graph" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Jim Mainprice.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

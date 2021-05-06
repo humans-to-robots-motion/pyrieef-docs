@@ -1,4 +1,4 @@
-(pyrieef) Python Riemannian Electrical Fields Documentation
+pyrieef documentation
 =============
 
 Pure python project to generate and learn collision free movement
@@ -14,4 +14,9 @@ Make documentation
     cd pyrieef/docs
     make html
 
+To edit the documentation go to
 
+    https://github.com/humans-to-robots-motion/pyrieef/tree/master/docs
+    
+You can edit the files there and make a pull request
+The files will be updated by the maintainer.

@@ -19,5 +19,5 @@ in real environments using a Riemannian geometric approach.
 * To edit the documentation: https://github.com/humans-to-robots-motion/pyrieef/tree/master/docs
     
 
-You can edit the files there and make a pull request
+You can edit the files there and make a pull request.
 The files will be updated by the maintainer.
